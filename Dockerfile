@@ -3,4 +3,4 @@ WORKDIR /app
 COPY . .
 EXPOSE 8080
 ENV ASPNETCORE_URLS=http://+:8080
-ENTRYPOINT ["dotnet", "Soluciones de grabadora.dll"]
+ENTRYPOINT ["dotnet", "RecorderSolutions.dll"]
