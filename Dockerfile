@@ -3,4 +3,4 @@ WORKDIR /app
 COPY . .
 EXPOSE 8080
 ENV ASPNETCORE_URLS=http://+:8080
-CMD ["sh", "-c", "dotnet $(ls Soluciones*.dll | head -n 1)"]
+ENTRYPOINT ["dotnet", "RecorderSolutions.dll"]
